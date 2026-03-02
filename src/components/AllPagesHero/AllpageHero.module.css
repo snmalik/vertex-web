@@ -1,0 +1,219 @@
+.heroWrapper {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  color: #ffffff;
+}
+
+.heroWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 1000px;
+  background: url("../../assets/image/breadcrumb-2.svg") no-repeat;
+  background-size: 1000px;
+  opacity: 0.8;
+}
+
+
+.heroWrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  background: url("../../assets/image/breadcrumb-2.svg") no-repeat;
+  background-size: contain;
+  transform: rotate(269deg);
+  opacity: 0.8;
+  filter: blur(2px) brightness(1.1);
+  transition: transform 2s ease;
+}
+
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0 0 10px 0;
+  letter-spacing: -2px;
+  /* color: red; */
+}
+@media (max-width:776px){
+  .heroTitle{
+    font-size: 2rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.breadcrumbLink {
+  color: #999;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbLink:hover {
+  color: #fff;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.currentPage {
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+.decorDots {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#333 1.5px, transparent 1.5px);
+  background-size: 15px 15px;
+  opacity: 0.4;
+}
+
+.decorLines {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 250px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #222, transparent);
+  transform: rotate(-45deg);
+}
+.shapeone {
+  position: absolute;
+  top: 120px;
+  opacity: 0.2; 
+
+  animation: floatShape 4s ease-in-out infinite;
+}
+
+@keyframes floatShape {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.shapetwo {
+  position: absolute;
+  bottom: 80px;
+left: 40%;
+  opacity: 0.2; 
+
+  animation: floatShape 4s ease-in-out infinite;
+}
+
+@keyframes floatShape {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.shapethree {
+  position: absolute;
+  bottom: 130px;
+right: 10%;
+  opacity: 0.2; 
+
+  animation: floatShape 4s ease-in-out infinite;
+}
+
+@keyframes floatShape {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.shapefour {
+  position: absolute;
+  bottom: 100px;
+right: 8%;
+  
+
+}
+.shapefive{
+  position: absolute;
+  top: 150px;
+  opacity: 0.6;
+}
+
+.shapesix{
+  position: absolute;
+  bottom: 60px;
+  opacity: 0.6;
+  left: 40%;
+}
+.shapeseven{
+   position: absolute;
+  bottom: 60px;
+  
+  right: 20%;
+}
+.shapeight{
+  position: absolute;
+   right: 37%;
+   opacity: 0.6;
+    animation: floatShape 4s ease-in-out infinite;
+
+
+}
+@media(max-width:576px){
+  .shapeone,
+  .shapetwo,
+  .shapethree,
+  .shapefour,
+  .shapefive,
+  .shapesix,
+  .shapeseven,
+  .shapeight{
+    display: none;
+  }
+  .heroWrapper{
+    height: 300px;
+  }
+}

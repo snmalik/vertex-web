@@ -1,0 +1,73 @@
+.wrapper {
+  padding: 100px 20px;
+  background: #213E6F; /* Deep dark for IoT feel */
+  color: #fff;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 34px;
+}
+
+.visualizer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.node {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+  width: 180px;
+  z-index: 2;
+}
+
+.centerNode {
+  background: #3b82f6;
+  border: none;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+  position: relative;
+}
+
+.mainIcon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+  margin-inline: auto;
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background: linear-gradient(90deg, #3b82f6, transparent);
+  position: relative;
+}
+
+/* Pulsing effect for the Edge Gateway */
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  border: 2px solid #3b82f6;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .visualizer { flex-direction: column; }
+  .line { width: 2px; height: 50px; background: #3b82f6; }
+}

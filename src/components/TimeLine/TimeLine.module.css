@@ -1,0 +1,76 @@
+.timelineSection {
+  padding: 80px 20px;
+  background-color: #f8fbff;
+}
+
+.container {
+  max-width: 800px; 
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 32px;
+  color: #2574BD;
+  margin-bottom: 50px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.timelineWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepItem {
+  display: flex;
+  gap: 30px;
+}
+
+.indicatorSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numberBox {
+  min-width: 45px;
+  height: 45px;
+  border: 1px solid #2574BD;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#2574BD;
+  font-weight: 700;
+  background: #fff;
+  z-index: 2;
+}
+
+.verticalLine {
+  width: 1px;
+  flex-grow: 1;
+  background-color: #e2e8f0;
+  margin: 10px 0;
+}
+
+.contentSide {
+  padding-bottom: 40px;
+}
+
+.contentSide h3 {
+  font-size: 20px;
+  color: #0f172aca;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contentSide p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 15px;
+}

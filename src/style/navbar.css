@@ -1,0 +1,148 @@
+.vertex-navbar {
+  /* background: linear-gradient(135deg, #705FFF, #BCB4FF); */
+  background: #BCB4FF;
+  padding: 15px 0px;
+  transition: all 0.35s ease;
+  box-shadow: 0 2px 20px rgba(112, 95, 255, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-scrolled {
+  padding: 5px 0;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img {
+  height: 60px;
+  /* filter: brightness(0) invert(1); */
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 25px 20px !important;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.services-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+
+.services-dropdown {
+  position: relative;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 1400px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  border-top: #705FFF 5px solid;
+  padding: 35px 30px;
+  margin-top: 10px;
+  z-index: 999;
+}
+
+.mega-menu-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.service-column {
+  padding: 0 25px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.service-column:last-child {
+  border-right: none;
+}
+
+.category-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #705FFF;
+}
+
+.service-item {
+  margin-bottom: 12px;
+}
+
+.service-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.25s ease;
+}
+
+.service-item a:hover {
+  color: #705FFF;
+  padding-left: 6px;
+  
+}
+
+
+
+.nav-btn {
+  background: #fff;
+  color: #705FFF;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color: #705FFF;
+  color: #fff;
+}

@@ -1,0 +1,81 @@
+/* Naya Fieldset aur Legend style */
+.fieldSet {
+  border: none;
+  border-top: 1px solid #ddd; /* Light grey line */
+  margin: 50px auto;
+  width: 85%; /* Slider ki width ke mutabiq */
+  text-align: center;
+}
+
+.legend {
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+/* Tumhara baqi slider code */
+.sliderContainer {
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+  width: 100%; /* Container ab fieldset ke andar fit hoga */
+}
+
+.sliderContainer::before,
+.sliderContainer::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sliderContainer::before {
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sliderContainer::after {
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sliderTrack {
+  display: flex;
+  width: calc(250px * 14); 
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.slide img {
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+
+  transition: 0.3s;
+}
+
+.slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

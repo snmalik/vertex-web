@@ -1,0 +1,160 @@
+.industry-wrapper {
+  padding: 60px;
+background: #fff;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.industry-title {
+  text-align: center;
+  color: #2d5c9f;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.industry-card {
+  border: 1px solid #2d5c9f;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+  padding: 25px;
+
+
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  
+  border-radius: 12px;
+
+  height: 300px;
+  background:transparent;
+  overflow: hidden;
+
+  z-index: 0;
+  transition: color 0.4s ease;
+}
+
+
+.industry-card h3 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-icon {
+  font-size: 70px;
+  color: #7B6CFF;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #7B6CFF;
+}
+  
+
+
+.industry-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+background: linear-gradient(
+  135deg,
+ navy,
+  navy
+);
+backdrop-filter: blur(1px);
+
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.55s ease-out;
+}
+
+.industry-card:hover::before {
+  transform: scale(30);
+}
+
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+  color:#000;
+  transition: color 0.5s ease;
+}
+
+.small-desc {
+  transition: color 0.5s ease;
+}
+
+.industry-card:hover .card-title,
+.industry-card:hover .small-desc,
+.industry-card:hover .main-icon {
+  color: white;
+ 
+}
+.industry-card:hover{
+    outline: 5px solid #fff !important;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.main-icon {
+  font-size: 70px;
+  color: navy;
+  transition: color 0.5s ease;
+}
+
+
+.go-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, navy, navy);
+  border-radius: 0 12px 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.go-arrow {
+  color: white;
+  font-size: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

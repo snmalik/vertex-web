@@ -1,0 +1,125 @@
+.section {
+    padding: 60px 20px;
+    /* background-color: #f8faff; */
+    background: url('../../../assets/image/hws.webp') no-repeat;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #2574BD;
+    margin-bottom: 40px;
+}
+
+/* --- Custom Scrollbar Container --- */
+.scrollWrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 500px; /* Aap apni marzi se height set kar sakte hain */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);
+}
+
+/* Scrollbar ki width */
+.scrollWrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar ka rasta (Track) */
+.scrollWrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Scrollbar ka pakadne wala hissa (Thumb) */
+.scrollWrapper::-webkit-scrollbar-thumb {
+    background: rgba(188, 180, 255, 0.382); /* Aapka theme color */
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+
+.scrollWrapper::-webkit-scrollbar-thumb:hover {
+    background: #213E6F;
+}
+
+
+.stepsContainer {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Background vertical line */
+.stepsContainer::before {
+    content: '';
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    bottom: 50px;
+    width: 4px;
+    background-color: #e5e7eb;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.numberContainer {
+    flex-shrink: 0;
+    width: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.number {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #e5e7eb;
+    background-color: #ffffff; /* Container background se match karein */
+    padding: 5px 0;
+    transition: color 0.4s ease;
+    display: inline-block;
+}
+
+.step.active .number {
+    color: #213E6F; /* Scroll/Hover par purple/blue color */
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    border-left: 5px solid transparent;
+}
+
+.step.active .card {
+    border-left: 5px solid #213E6F;
+ 
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #213E6F;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    color: #64748b;
+    line-height: 1.6;
+}

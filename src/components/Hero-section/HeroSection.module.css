@@ -1,0 +1,280 @@
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+ .hero {
+ width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px 100px 100px 100px;
+  background: 
+    url('../../assets/image/shape-1.svg') no-repeat bottom left, 
+    linear-gradient(112.39deg, #e6fff9 -9.3%, #5c41fb 193.23%);
+
+  background-size: auto, cover;
+  position: relative;
+}
+@media(max-width:1000px){
+.heroContent{
+  flex-direction: column !important;
+  display: flex;
+}
+.hero{
+  flex-direction: column !important;
+  display: flex;
+}
+
+}
+.topText{
+  
+  font-family: "Birthstone", cursive;
+  font-size: 40px;
+  color:#6669F1 ;
+
+}
+
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+ 
+}
+
+.heroText {
+  flex: 1;
+  padding-right: 40px;
+  position: relative;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.heroSubtitle {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000;
+ max-width: 650px;
+}
+
+.heroSubtitle span{
+  color: #6669F1;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #00000096;
+}
+
+.heroButton {
+  background: #705FFF;
+  border: none;
+  padding: 17px 34px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.heroButton:hover {
+  background: #000;
+}
+
+.heroImages {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+.heroImgRightTop{
+ 
+margin-left: -70px;
+padding: 20px 0px 10px 0px;
+border-radius: 150px 150px  0px 380px;
+animation: floatLable 5s ease-in-out infinite;
+position: relative; 
+  z-index: 10;
+}
+
+
+.heroImgRight {
+
+  object-fit: cover;
+position: relative; 
+  z-index: 10;
+  
+  margin-left: -70px;
+  z-index: 10;
+ 
+
+}
+.heroImgLeft{
+  
+  object-fit: cover;
+  border: 5px solid #C6C9FC;
+  border-radius: 170px;
+  box-shadow: -40px 0 20px -5px #ffffff6b;
+  z-index: 100;
+  animation: floatLable 5s ease-in-out infinite;
+  
+
+}
+@keyframes floatLable{
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.angleOne{
+  position: absolute;
+  top: -120px;
+  right: 0px;
+  z-index: 2;
+}
+.angleTwo{
+  position: absolute;
+  top: -80px;
+  left: 120px;
+}
+.angleThree{
+  position: absolute;
+  top: -120px;
+  left: 40px;
+}
+.angleThree img{
+  opacity: 0.4;
+}
+.angleFour{
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+}
+.angleFour img {
+  width: 180px;
+  height: auto;
+  position: relative;
+  
+ 
+  filter: brightness(0.5) contrast(2) invert(0.2);
+
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  
+ 
+  opacity: 1 !important; 
+  z-index: 5;
+}
+.angleFive{
+  position: absolute;
+  top: -240px;
+  left:40px;
+    animation: floatLable 5s ease-in-out infinite;
+  
+}
+.angleSix{
+  position: absolute;
+  top: -240px;
+  left: 0px;
+    animation: floatLable 5s ease-in-out infinite;
+
+}
+.angleSix img{
+  opacity: 0.4;
+}
+.mouse{
+  position: absolute;
+  bottom: -44px;
+  left: 45%;
+}
+.mouseWrap{
+  position: relative;
+}
+.scroolIn{
+  position: absolute;
+  top: 45%;
+  left: 40%;
+
+}
+.scroolIn img{
+  animation: mouseFlot 3s ease-in infinite;
+}
+@keyframes mouseFlot{
+   0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1500px) {
+  .heroSubtitle {
+    font-size: 40px !important;
+  }
+}
+
+
+@media (max-width: 576px) { 
+  .hero {
+    padding: 20px !important;
+    padding-top: 100px !important;
+  }
+  .heroTitle {
+    font-size: 20px !important;
+  }
+   .heroSubtitle {
+    font-size: 25px !important;
+    max-width: 100%;
+  }
+  .heroText{
+    padding: 0px;
+  }
+  .angleOne,
+  .angleTwo,
+  .angleThree,
+  .angleFour,
+  .angleFive,
+  .angleSix{
+    display: none;
+  }
+.heroImgRight {
+max-width: 200px;
+ margin-left: -50px
+}
+.heroImgLeft{
+  max-width: 170px;
+}
+.heroImages{
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+.mouse{
+  left: 33%;
+}
+  
+  
+}
