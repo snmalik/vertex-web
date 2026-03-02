@@ -80,13 +80,13 @@ const Navbar = () => {
               <Link className={styles.navLink} to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
             </li>
             
-            {/* Mobile Contact Button */}
+            
             <li className="d-lg-none mt-3">
-                <button className={styles.navBtnCustom}>Contact Us</button>
+                <button   className={styles.navBtnCustom}>Contact Us</button>
             </li>
           </ul>
 
-          {/* Desktop Contact Button */}
+          
           <button className={`${styles.navBtnCustom} d-none d-lg-block`}>
             Contact Us
           </button>
