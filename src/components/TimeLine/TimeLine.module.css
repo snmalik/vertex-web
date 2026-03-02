@@ -74,3 +74,66 @@
   line-height: 1.6;
   font-size: 15px;
 }
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .mainTitle {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .stepItem {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .indicatorSide {
+    flex-direction: row; /* Number + line side by side */
+    gap: 10px;
+  }
+
+  .verticalLine {
+    display: none; /* Hide line on small screens */
+  }
+
+  .numberBox {
+    min-width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .contentSide h3 {
+    font-size: 18px;
+  }
+
+  .contentSide p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .stepItem {
+    gap: 10px;
+  }
+
+  .contentSide h3 {
+    font-size: 16px;
+  }
+
+  .contentSide p {
+    font-size: 13px;
+  }
+}

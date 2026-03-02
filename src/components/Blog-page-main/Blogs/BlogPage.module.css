@@ -166,3 +166,8 @@
     transform: translateY(0px) scale(1);
   }
 }
+@media(max-width:576px){
+  .shapeImg{
+    display: none
+  }
+}

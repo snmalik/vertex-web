@@ -1,333 +1,136 @@
-.container {
-  padding: 100px 20px;
-  background-color: #F8F7FF;
+.section {
+  background-color: #F9FAFF;
+  padding: 80px 40px ;
   position: relative;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-.dotGridTop {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-  width: 100px;
-  height: 100px;
-  background-image: radial-gradient(#dcdde1 1.5px, transparent 1.5px);
-  background-size: 12px 12px;
-  opacity: 0.5;
-}
-
-.curveBottom {
-  position: absolute;
-  bottom: -50px;
-  left: -50px;
-  width: 350px;
-  height: 250px;
-  border: 10px solid #f0f1ff;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-padding-left: 250px;
-  z-index: 1;
-}
-
-.header {
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.subTitle {
-  display: block;
- font-family: "Birthstone", cursive;
+.titleSub {
+
+   font-family: "Birthstone", cursive;
   font-size: 40px;
   color:#6669F1 ;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.mainTitle {
-  font-size: 36px;
-  color: #2d3436;
-  font-weight: 700;
-  margin: 0;
-}
-.mainTitle span{
-    color: #6669F1;
+.titleMain {
+  color: #333;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.headerDesc {
-  max-width: 450px;
-  color: #636e72;
-  font-size: 15px;
-}
-
-.sliderWindow {
-  overflow: hidden;
-  padding: 20px 0;
-}
-
-.sliderTrack {
-  display: flex;
-  
-}
-
-.slideCard {
-  min-width: 45%;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-.cardInner {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 35px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-  border: 1px solid #f1f2f6;
-  position: relative;
-  height: 100%;
-}
-
-
-.imageCircle {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  padding: 3px;
-  background: #6669F1;
-    margin-bottom: 20px;
-}
-
-.imageCircle img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid white;
-
-}
-
-.userName {
-  margin: 0;
-  color: #6669F1;
-  font-weight: 500;
-}
-
-.userRole {
-  margin: 0;
-  color: #b2bec3;
-  font-size: 13px;
-}
-
-.stars {
-  color: #fdcb6e;
-  display: flex;
-  gap: 2px;
-}
-
-.quoteIcon {
-  position: absolute;
-  right: 20px;
-  top: 60%;
-  font-size: 40px;
-  color: #f1f2f6;
-}
-.slideCard:hover .quoteIcon{
-    color: #6669F1;
-}
-.reviewLabel {
-  margin: 20px 0 10px 0;
-  font-weight: 700;
-}
-
-.reviewText {
-  color: #636e72;
+.description {
+  max-width: 400px;
+  color: #888;
   font-size: 14px;
   line-height: 1.6;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 40px;
-}
-
-.navDot {
-  height: 8px;
-  width: 30px;
-  border-radius: 10px;
-  background: #e0e0e0;
-  border: none;
-  cursor: pointer;
-}
-
-.activeDot {
-  width: 50px;
-  background: linear-gradient(90deg, #a29bfe, #3EE5D6);
-}
-
-@media (max-width: 992px) {
-  .slideCard { min-width: 50%; }
-}
-
-@media (max-width: 600px) {
-  .slideCard { min-width: 100%; }
-}
-.shapetwo {
-  position: absolute;
-  top: 60px;
-right: 10%;
-  opacity: 0.2; 
-
-  animation: floatShape 4s ease-in-out infinite;
-}
-
-@keyframes floatShape {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.05);
-  }
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-}
-.shapeone{
-  position: absolute;
-
-top: 10%;
-  opacity: 0.2; 
-
-  animation: floatShape 4s ease-in-out infinite;
-}
-
-@keyframes floatShape {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.05);
-  }
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-}
-.shapethree{
-  position: absolute;
-
-top: 10%;
-  opacity: 0.8; 
-
-  animation: floatShape 4s ease-in-out infinite;
-}
-
-@keyframes floatShape {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.05);
-  }
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-}
-/* --- Base Container --- */
-.container {
-  padding: 100px 20px;
-  background-color: #F8F7FF;
-  position: relative;
-  overflow: hidden;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* --- Wrapper (The Fix) --- */
-.wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  /* Desktop par 250px space rahegi */
-  padding-left: 250px; 
-}
-
-/* --- Media Query to Remove Padding --- */
-@media (max-width: 1100px) {
-  .wrapper {
-    /* Small screen par padding-left khatam */
-    padding-left: 0; 
-    padding-right: 0;
-    text-align: center; /* Content ko center karne ke liye */
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: center; /* Center alignment for tablet/mobile */
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .headerDesc {
-    margin: 10px auto 0; /* Description ko center kiya */
-  }
-}
-
-/* --- Slider & Cards Styling (Same as before) --- */
-.sliderWindow {
-  overflow: hidden;
-  padding: 20px 0;
-}
-
-.sliderTrack {
-  display: flex;
-}
-
-.slideCard {
-  min-width: 45%; 
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* Tablet par 2 cards */
-@media (max-width: 992px) {
-  .slideCard { min-width: 50%; }
-}
-
-/* Mobile par 1 card aur padding kam */
-@media (max-width: 600px) {
-  .container {
-    padding: 60px 15px;
-  }
-  .slideCard { 
-    min-width: 100%; 
-  }
-  .cardInner {
-    padding: 25px;
-  }
-  .mainTitle {
-    font-size: 28px;
-  }
-}
-
-.cardInner {
-  background: #ffffff;
-  border-radius: 24px;
+.card {
+  background: white;
   padding: 35px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-  border: 1px solid #f1f2f6;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
   position: relative;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 60px; 
+}
+.card:hover{
+  border: 1px solid #6366F1;
+}
+
+.profileArea {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.imgWrapper {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #6669F1 ;
+  padding: 4px;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  color: #6366F1;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.role {
+  color: #A0AEC0;
+  font-size: 12px;
+  margin: 0;
+}
+
+.stars {
+  margin-left: auto;
+  color: #FBBF24;
+  letter-spacing: 2px;
+}
+
+.reviewTitle {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reviewText {
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 
-@media (max-width: 768px) {
-  .shapeone, .shapetwo, .shapethree, .dotGridTop {
-    display: none;
-  }
+.quoteIcon {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  color: #f0f0f0;
+  font-size: 60px;
+  line-height: 1;
 }
 
+
+:global(.swiper-pagination) {
+  text-align: right !important;
+  padding-right: 50px !important;
+  bottom: 10px !important;
+}
+
+:global(.swiper-pagination-bullet) {
+  width: 25px !important;
+  height: 6px !important;
+  border-radius: 4px !important;
+  background: #E2E8F0 !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  width: 45px !important;
+  background: linear-gradient(90deg, #5EEAD4, #6366F1) !important;
+}
