@@ -30,12 +30,44 @@
 }
 
 }
-.topText{
+.topText {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #5e5ef0; 
+  margin-bottom: 10px;
+  display: block;
+}
+/* .topText{
   
   font-family: "Birthstone", cursive;
-  font-size: 40px;
+  font-size: 50px;
   color:#6669F1 ;
+  font-weight: 600;
 
+} */
+.trustLine {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a4a4a; 
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.trustLine span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.trustLine span::before {
+  content: "✔";
+  color: #2ecc71; 
+  font-weight: bold;
 }
 
 
@@ -60,18 +92,18 @@
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 .heroSubtitle {
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 52px; /* Desktop ke liye */
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a1a; 
   margin-bottom: 20px;
-  color: #000;
- max-width: 650px;
 }
 
-.heroSubtitle span{
-  color: #6669F1;
+.heroSubtitle span {
+  color: #5e5ef0; 
 }
+
 
 .heroDescription {
   font-size: 1rem;

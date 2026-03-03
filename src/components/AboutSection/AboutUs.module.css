@@ -148,7 +148,9 @@
     color: #222;
     margin-top: 10px;
 }
-
+.mainHeading span{
+    color: #705fff;
+}
 .divider {
     width: 50px;
     height: 3px;

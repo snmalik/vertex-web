@@ -45,10 +45,10 @@ const Home = () => {
    <div className="yara">
    <HeroSection />
      <AboutUs 
-      subTitle="About Us"
-      title="Making Your Business More Unique"
-      desc1="Vertex Pro is Pakistan's leading IT services company, dedicated to transforming your business vision into a digital reality. We blend creativity with technology to deliver results that matter."
-      desc2="From startups to established enterprises, we provide end-to-end digital support, ensuring your brand stays ahead in the competitive online landscape."
+      subTitle="About Vertex Pro"
+      title="Enterprise Technology Partner for  <span>Global <br /> Scale & Security<span/>"
+      desc1="Vertex Pro is a specialized IT Infrastructure and Cybersecurity firm dedicated to stabilizing and securing complex digital environments. We move beyond basic support to provide enterprise-grade systems architecture that drives real business resilience."
+      desc2="From cloud transformation to 24/7 security operations, we serve as the technical backbone for organizations that cannot afford downtime. Our mission is to bridge the gap between complex technology and seamless business execution."
       mainImg={imgMain}
       img1={img1}
       img2={img2} 

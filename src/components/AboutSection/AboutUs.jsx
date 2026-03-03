@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import React from 'react';
 // import { Container, Row, Col } from "react-bootstrap";
 // import { motion } from "framer-motion";
@@ -202,7 +203,7 @@ const AboutSection = ({
                  <svg viewBox="0 0 100 100" className={styles.rotatingText}>
                     <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                     <text>
-                      <textPath xlinkHref="#circlePath">Creative Minds • Creative Minds •</textPath>
+                      <textPath xlinkHref="#circlePath">Security • Integrity • Excellence" ya "Expertise • Precision • Security</textPath>
                     </text>
                  </svg>
                  <div className={styles.tagDot}></div>

@@ -83,13 +83,13 @@ const Navbar = () => {
             
             {/* Mobile Contact Button */}
             <li className="d-lg-none mt-3">
-                <button className={styles.navBtnCustom}>Contact Us</button>
+                <button className={styles.navBtnCustom}> <Link to="/contact" >Contact Us</Link> </button>
             </li>
           </ul>
 
           {/* Desktop Contact Button */}
           <button className={`${styles.navBtnCustom} d-none d-lg-block`}>
-            Contact Us
+           <Link style={{textDecoration:"none"}} to="/contact" >Contact Us</Link>
           </button>
         </div>
       </div>

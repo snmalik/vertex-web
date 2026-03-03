@@ -1,16 +1,16 @@
-import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import styles from "./HeroSection.module.css";
-import hero_1 from '../../assets/image/hero1.png'
-import hero_2 from '../../assets/image/h10-hero-left.png'
-import hero_3 from '../../assets/image/h10-hero-right.png'
-import shape_7 from '../../assets/image/shape-7.svg'
-import shape_8 from '../../assets/image/shape-6.svg'
-import shape_5 from '../../assets/image/shape-5.svg'
-import shape_51 from '../../assets/image/shape-51.svg'
-import shape_4 from '../../assets/image/shape-4.svg'
-import scroll from '../../assets/image/scroll2box.svg'
-import mouse from '../../assets/image/scroll2.svg'
+// import hero_1 from '../../assets/image/hero1.png'
+import hero_2 from '../../assets/image/h10-hero-left.png';
+import hero_3 from '../../assets/image/h10-hero-right.png';
+import mouse from '../../assets/image/scroll2.svg';
+import scroll from '../../assets/image/scroll2box.svg';
+import shape_4 from '../../assets/image/shape-4.svg';
+import shape_5 from '../../assets/image/shape-5.svg';
+import shape_51 from '../../assets/image/shape-51.svg';
+import shape_8 from '../../assets/image/shape-6.svg';
+import shape_7 from '../../assets/image/shape-7.svg';
 
 const HeroSection = () => {
   return (
@@ -23,29 +23,45 @@ const HeroSection = () => {
       <div className={styles.heroContent}>
         {/* Text Side */}
         <div className={styles.heroText}>
-          <h5 className={styles.topText}>Your Brand,Our Expertise</h5>
-          <h2 className={styles.heroSubtitle}>
-The Best High-End <span>Managed IT Services Agency!</span>
-          </h2>
-          <p className={styles.heroDescription}>
-        We provide scalable infrastructure, managed IT services, and cloud solutions designed to fuel your business growth and ensure maximum operational uptime.
-          </p>
-          <motion.button
-            className={styles.heroButton}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          >
-            Explore Now
-          </motion.button>
+  
+  <h5 className={styles.topText}>Global Infrastructure & Security Experts</h5>
+  
+  {/* MAIN HEADLINE: Isko bold aur professional rakha hai */}
+  <h2 className={styles.heroSubtitle}>
+    Enterprise IT Infrastructure & <span>Cybersecurity Solutions</span>
+  </h2>
+  
+  {/* DESCRIPTION: Client ka faida (Value Proposition) */}
+  <p className={styles.heroDescription}>
+    We design, secure, and manage scalable IT environments that keep your business operational, secure, and future-ready.
+  </p>
 
-           <div className={styles.angleFive}>
-            <img src={ shape_8} alt="" />
-          </div>
-          <div className={styles.angleSix}>
-            <img src={ shape_4} alt="" />
-          </div>
-        </div>
+
+  <div className={styles.buttonGroup}>
+    <motion.button
+      className={styles.heroButton}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.8, duration: 0.6 }}
+    >
+      Schedule Consultation
+    </motion.button>
+    
+   
+  </div>
+
+
+  <div className={styles.trustLine} style={{ marginTop: '20px', fontSize: '1rem', opacity: 0.8 }}>
+    <span>✔ 15+ Years Experience</span> | <span>✔ Enterprise Infrastructure</span> | <span>✔ 24/7 Global Support</span>
+  </div>
+
+  <div className={styles.angleFive}>
+    <img src={shape_8} alt="" />
+  </div>
+  <div className={styles.angleSix}>
+    <img src={shape_4} alt="" />
+  </div>
+</div>
 
         {/* Image Side */}
         <div className={styles.heroImages}>

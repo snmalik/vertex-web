@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -34,7 +35,7 @@ const ContactSection = () => {
       setResult("Network error. Please try again later.");
     }
 
-    // 5 seconds baad message hide karne ke liye
+   
     setTimeout(() => setResult(""), 5000);
   };
 
