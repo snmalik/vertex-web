@@ -10,16 +10,16 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
 
-        {/* Left Section */}
+        {/* Left Section - Positioning Update */}
         <div className={styles.footerCol + " " + styles.logoCol}>
           <div className={styles.logo}>
             <img src={logo} alt="Vertex Pro Logo" />
           </div>
 
           <p>
-            Vertex Pro is one of Pakistan's rapidly growing digital marketing
-            company, helping brands succeed in the ever-evolving online
-            landscape.
+            Vertex Pro is a global leader in Enterprise IT Infrastructure, 
+            Cybersecurity, and Managed Tech Solutions, empowering organizations 
+            with scalable and secure digital environments.
           </p>
 
           <div className={styles.socialIcons}>
@@ -31,54 +31,54 @@ export default function Footer() {
 
         {/* Useful Links 1 */}
         <div className={styles.footerCol}>
-          <h3>Useful Links</h3>
+          <h3>Core Services</h3> {/* "Useful Links" se behtar title */}
           <ul>
-            <li><Link to="/" className={styles.footerLink}>Home</Link></li>
-            <li><Link to="/about" className={styles.footerLink}>About Us</Link></li>
-            <li><Link to="/services" className={styles.footerLink}>Services</Link></li>
-            <li><Link to="/blog" className={styles.footerLink}>Blog</Link></li>
-            <li><Link to="/contact" className={styles.footerLink}>Contact Us</Link></li>
+            <li><Link to="/services/cloud-consulting" className={styles.footerLink}>Cloud Solutions</Link></li>
+            <li><Link to="/services/risk-assessment-&-gap-analysis" className={styles.footerLink}>Cybersecurity</Link></li>
+            <li><Link to="/services/co-managed-it-services" className={styles.footerLink}>Managed IT</Link></li>
+            <li><Link to="/services/devops-consulting" className={styles.footerLink}>DevOps</Link></li>
+            <li><Link to="/contact" className={styles.footerLink}>IT Assessment</Link></li>
           </ul>
         </div>
 
         {/* Useful Links 2 */}
         <div className={styles.footerCol}>
-          <h3>More Links</h3>
+          <h3>Company</h3>
           <ul>
-            <li><Link to="/faq" className={styles.footerLink}>FAQ</Link></li>
-            <li><Link to="/portfolio" className={styles.footerLink}>Portfolio</Link></li>
-            <li><Link to="/testimonial" className={styles.footerLink}>Testimonial</Link></li>
-            <li><Link to="/privacy" className={styles.footerLink}>Privacy Policy</Link></li>
-            <li><Link to="/terms" className={styles.footerLink}>Terms & Conditions</Link></li>
+            <li><Link to="/about" className={styles.footerLink}>About Us</Link></li>
+            <li><Link to="" className={styles.footerLink}>Case Studies</Link></li> {/* Portfolio ko Case Studies kehna zyada professional hai */}
+            <li><Link to="" className={styles.footerLink}>Privacy Policy</Link></li>
+            <li><Link to="" className={styles.footerLink}>Terms & Conditions</Link></li>
+            <li><Link to="/contact" className={styles.footerLink}>Contact Us</Link></li>
           </ul>
         </div>
 
-        {/* Contact Us */}
+        {/* Contact Us - Global Focus */}
         <div className={styles.footerCol + " " + styles.contactCol}>
-          <h3>Contact Us</h3>
+          <h3>Global Contact</h3>
 
           <div className={styles.contactItem}>
-            <FaEnvelope />
+            <FaEnvelope className={styles.contactIcon} />
             <a href="mailto:info@vertexpro.net" className={styles.footerLink}>info@vertexpro.net</a>
           </div>
 
           <div className={styles.contactItem}>
-            <FaGlobe />
-            <a href="https://www.vertexpro.net" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>www.vertexpro.net</a>
+            <FaPhoneAlt className={styles.contactIcon} />
+            {/* International format phone number is good */}
+            <a href="tel:+19292072406" className={styles.footerLink}>(+1) 929-207-2406</a>
           </div>
 
           <div className={styles.contactItem}>
-            <FaMapMarkerAlt />
+            <FaMapMarkerAlt className={styles.contactIcon} />
             <span>
               13 N, Gurumangat Road,
-              Industrial Area Gulberg II,
-              Lahore, Pakistan 54000
+              Gulberg II, Lahore, PK 54000
             </span>
           </div>
-
+          
           <div className={styles.contactItem}>
-            <FaPhoneAlt />
-            <a href="tel:+19292072406" className={styles.footerLink}>(+1) 9292072406</a>
+             <FaGlobe className={styles.contactIcon} />
+             <span className={styles.footerLink}>Global Remote Support 24/7</span>
           </div>
         </div>
 
@@ -86,10 +86,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className={styles.footerBottom}>
-        <p>Copyright © 2025 Vertex Pro. All Rights Reserved.</p>
+        <p>Copyright © 2026 Vertex Pro. All Rights Reserved.</p>
         <div className={styles.bottomLinks}>
-          <Link to="/privacy" className={styles.footerLink}>Privacy Policy</Link>
-          <Link to="/faq" className={styles.footerLink}>FAQ</Link>
+          <Link to="/privacy" className={styles.footerLink}>Security Policy</Link>
+          <Link to="/faq" className={styles.footerLink}>Sitemap</Link>
         </div>
       </div>
     </footer>

@@ -1,8 +1,10 @@
 .stats-section {
-  padding: 40px 0;
+  padding: 70px 0;
 background: #B2B6FA;
-background: linear-gradient(179deg, rgba(178, 182, 250, 0.75) 70%, rgba(228, 229, 253, 0.35) 100%);
-  color: #fff;
+/* background: linear-gradient(179deg, rgba(178, 182, 250, 0.75) 70%, rgba(228, 229, 253, 0.35) 100%); */
+/* Stats Section Gradient */
+background: linear-gradient(180deg, #a9a9fa 0%, #e3f7fa 100%);
+  color: #0000006a;
   position: relative;
   overflow: hidden;
 
@@ -17,9 +19,9 @@ background: linear-gradient(179deg, rgba(178, 182, 250, 0.75) 70%, rgba(228, 229
 
 .stat-box span {
   font-size: 62px;
-  font-weight: 500;
+  font-weight: 900;
   opacity: 1;
-  color: #5F39FF;
+  color: #1e1e64;
   
 }
 

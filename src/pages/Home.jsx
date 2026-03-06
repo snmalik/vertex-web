@@ -23,6 +23,9 @@ import img3 from "../assets/image/about-3.png";
 
 import circle from '../assets/image/shape-10.svg'
 import shape from '../assets/image/shape-9.svg'
+import ContactCTA from "../components/CtA/ContactCTA";
+import Methodology from "../components/Methodology/Methodology";
+import TrustBar from "../components/Trustbar/Trustbar";
 
 
 
@@ -58,14 +61,19 @@ const Home = () => {
       bitDotShape={shape}
     />
    <StatsSection />
+   <TrustBar />
    <ServiceSection />
+
+   <Methodology />
    <Testimonials />
    <TeamSection />
    <PortfolioSection />
    <IndustryGrid />
    <FAQ />
    <BlogSection />
+   
  <ContactSection />
+ <ContactCTA />
  </div>
    {/* <Test /> */}
   

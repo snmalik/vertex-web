@@ -21,34 +21,42 @@ const HeroSection = () => {
       transition={{ duration: 1 }}
     >
       <div className={styles.heroContent}>
-        {/* Text Side */}
+    
         <div className={styles.heroText}>
   
   <h5 className={styles.topText}>Global Infrastructure & Security Experts</h5>
-  
-  {/* MAIN HEADLINE: Isko bold aur professional rakha hai */}
+
   <h2 className={styles.heroSubtitle}>
     Enterprise IT Infrastructure & <span>Cybersecurity Solutions</span>
   </h2>
   
-  {/* DESCRIPTION: Client ka faida (Value Proposition) */}
+  
   <p className={styles.heroDescription}>
     We design, secure, and manage scalable IT environments that keep your business operational, secure, and future-ready.
   </p>
 
 
-  <div className={styles.buttonGroup}>
-    <motion.button
-      className={styles.heroButton}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 0.8, duration: 0.6 }}
-    >
-      Schedule Consultation
-    </motion.button>
-    
-   
-  </div>
+ <div className={styles.buttonGroup}>
+  
+  <motion.button
+    className={styles.heroButton}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    onClick={() => window.location.href = '/contact'} 
+  >
+    Schedule Consultation
+  </motion.button>
+
+  
+  <motion.button
+    className={styles.heroButtonSecondary}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    onClick={() => window.location.href = '#services'}
+  >
+    Explore Solutions
+  </motion.button>
+</div>
 
 
   <div className={styles.trustLine} style={{ marginTop: '20px', fontSize: '1rem', opacity: 0.8 }}>
@@ -63,7 +71,7 @@ const HeroSection = () => {
   </div>
 </div>
 
-        {/* Image Side */}
+      
         <div className={styles.heroImages}>
           <img
             src={hero_2 }
