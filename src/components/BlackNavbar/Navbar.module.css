@@ -115,7 +115,7 @@
     padding-left: 5px;
 }
 
-/* Mobile Toggle Button */
+
 .menuBtn {
     display: none;
     background: none;
@@ -125,7 +125,7 @@
     cursor: pointer;
 }
 
-/* Contact Button */
+
 .navBtnCustom {
     background: #fff;
     color: #705FFF;
@@ -136,8 +136,9 @@
     transition: 0.3s;
 }
 
-/* Responsive Logic */
 @media (max-width: 1024px) {
+
+    
     .menuBtn { display: block; }
     
     .navMenu {
@@ -186,4 +187,15 @@
 .serviceColumn{
   padding: 0 25px;
   border-right: 1px solid #e5e5e5;
+}
+
+@media(max-width:576px){
+    .navLink::after {
+        display: none !important;
+    }
+
+    .navLink:hover::after {
+        width: 0% !important;
+    }
+
 }

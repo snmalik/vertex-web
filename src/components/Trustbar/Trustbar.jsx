@@ -35,11 +35,11 @@ const TrustBar = () => {
           spaceBetween={50}
           slidesPerView={2}
           loop={true}
-          speed={3000} // Slow and smooth movement
+          speed={3000} 
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true, // Hover karne par slider rukh jayega
+            pauseOnMouseEnter: true, 
           }}
           breakpoints={{
             640: { slidesPerView: 3 },

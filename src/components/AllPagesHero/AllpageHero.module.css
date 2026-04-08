@@ -214,6 +214,10 @@ right: 8%;
     display: none;
   }
   .heroWrapper{
-    height: 300px;
+    height: 350px;
+    padding-top: 100px;
+  }
+  .heroTitle{
+    font-size: 25px;
   }
 }

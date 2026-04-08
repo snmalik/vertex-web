@@ -1,5 +1,5 @@
 .vertex-navbar {
-  /* background: linear-gradient(135deg, #705FFF, #BCB4FF); */
+ 
   background: #BCB4FF;
   padding: 15px 0px;
   transition: all 0.35s ease;
@@ -14,7 +14,7 @@
 
 .navbar-brand img {
   height: 60px;
-  /* filter: brightness(0) invert(1); */
+ 
 }
 
 .navbar-nav {

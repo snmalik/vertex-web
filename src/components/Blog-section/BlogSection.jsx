@@ -3,14 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./BlogSection.module.css";
 import { blogPosts } from "./blogData";
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6 }
-  }
-};
+
 
 const BlogSection = () => {
   return (
@@ -19,8 +12,8 @@ const BlogSection = () => {
       <h2 className={styles.blogHeading}>Latest Blog Posts</h2>
       <div className={styles.blogGrid}>
         {blogPosts.map((post, index) => (
-      <motion.div className={styles.blogCard}>
-  <div className={styles.imageWrapper}>
+      <motion.div  key={index} className={styles.blogCard}>
+  <div  className={styles.imageWrapper}>
     <img src={post.image} alt={post.title} />
     <div className={styles.hoverShadow}></div>
   </div>

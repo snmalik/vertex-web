@@ -14,12 +14,12 @@ const FaqSection = ({ faqTitle, faqs }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, // Ye animation ko sirf aik baar chalne dega
+      once: true, 
     });
   }, []);
 
   return (
-    /* Animation sirf is main div par chale gi, andar ke cards par nahi */
+
     <div data-aos="fade-up" data-aos-duration="1000">
       <section className={styles.faqWrapper}>
         <div className={styles.container}>
@@ -38,7 +38,7 @@ const FaqSection = ({ faqTitle, faqs }) => {
                   </span>
                 </div>
                 
-                {/* CSS transition handles the opening/closing smoothly */}
+                
                 <div className={styles.answerWrapper}>
                   <div className={styles.answerContent}>
                     <p>{faq.answer}</p>

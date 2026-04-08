@@ -38,6 +38,12 @@
   letter-spacing: -1px;
 }
 
+@media(max-width:576px){
+  .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
 .processGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

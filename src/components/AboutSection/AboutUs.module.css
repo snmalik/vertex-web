@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
 .aboutSection {
     padding: 100px 0;
     overflow: hidden;
@@ -137,7 +141,7 @@
 
 .subHeading {
     color: #705fff;
-    font-family: 'Birthstone', cursive;
+    font-family: "Birthstone", cursive;
     font-size: 40px;
     display: block;
 }

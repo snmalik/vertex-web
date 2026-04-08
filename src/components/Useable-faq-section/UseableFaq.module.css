@@ -24,7 +24,7 @@
 }
 
 .faqItem {
-  border: 1px solid #e2e8f0; /* Light gray border */
+  border: 1px solid #e2e8f0; 
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -67,7 +67,7 @@
   color: #2563eb;
 }
 
-/* Smooth Transition Logic */
+
 .answerWrapper {
   display: grid;
   grid-template-rows: 0fr;
