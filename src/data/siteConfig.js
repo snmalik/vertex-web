@@ -403,7 +403,7 @@ const blogPage = {
 
 // --- 📞 CONTACT PAGE DEFINITION ---
 const contactPage = {
-  sections: ["contact_page_header_1", "contact_contact_1", "contact_map_1"],
+  sections: ["contact_page_header_1", "contact_info_cards_1", "contact_contact_1", "contact_map_1"],
   hiddenSections: [],
   data: {
     contact_page_header_1: {
@@ -411,6 +411,21 @@ const contactPage = {
       content: {
         title: "Contact Us",
         pathnames: ["Contact"],
+      },
+    },
+    contact_info_cards_1: {
+      type: "ContactHeader",
+      content: {
+        title: "Contact Our Experts",
+        subtitle: "We are here to help you scale and secure your business.",
+        pk_label: "Pakistan Office",
+        pk_address: "13 N, Gurumangat Road, Gulberg II, Lahore, PK 54000",
+        pk_phone: "+92 315 6661667",
+        usa_label: "USA Office",
+        usa_address: "7901 4th St N, STE 300, St. Petersburg, FL 33702",
+        usa_phone: "+1 929-207-2406",
+        email1: "info@vertexpro.net",
+        email2: "support@vertexpro.net",
       },
     },
     contact_contact_1: {

@@ -142,7 +142,7 @@ const PageController = () => {
         Testimonials: 'Testimonials', Team: 'Team Members', Portfolio: 'Project Portfolio',
         Industry: 'Industry Icons', FAQ: 'FAQ Accordion', Blog: 'Blog Posts Feed',
         CTA: 'Call to Action', ContactSection: 'Get in Touch Form', Slider: 'Partner Logos Slider',
-        ContactHeader: 'Contact Page Header', Map: 'Google Map', ServiceHero: 'Service Hero',
+        ContactHeader: 'Contact Info Cards', Map: 'Google Map', ServiceHero: 'Service Hero',
         ReuseCard: 'Service Cards Grid', ChallengeGrid: 'Challenges Grid',
         FeatureGrid: 'Features Grid', FeatureSection: 'Feature Section',
         MigrationFlow: 'Migration / Process Flow', DevOpsFlow: 'DevOps Lifecycle Flow',
