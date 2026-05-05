@@ -1,0 +1,111 @@
+.wrapper {
+    padding: 80px 20px;
+    background-color: #FFF; /* Light background for the whole section */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2574BD; 
+    margin-bottom: 60px;
+
+    line-height: 1.2;
+}
+
+.mainTitle span {
+    color: #2574BD;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.timelineItem {
+    display: flex;
+    gap: 30px;
+}
+
+.indicatorCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+}
+
+.numberBox {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #6f5fff3c;
+    
+    -webkit-text-stroke: 1px #2574BD;
+    background: none;
+}
+
+.verticalLine {
+    width: 2px;
+    flex-grow: 1;
+    background-color: #333; 
+    margin: 5px 0;
+}
+
+.contentCol {
+    padding-bottom: 40px; /* Space between steps */
+}
+
+.stepTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stepDescription {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .mainTitle {
+        font-size: 1.8rem;
+    }
+
+    .timelineItem {
+        gap: 15px;
+    }
+
+    .number {
+        font-size: 1.2rem;
+    }
+}

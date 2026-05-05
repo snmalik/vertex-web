@@ -1,0 +1,332 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px 100px 100px 100px;
+  background:
+    url("../../../assets/image/shape-1.svg") no-repeat bottom left,
+    linear-gradient(112.39deg, #e6fff9 -9.3%, #5c41fb 193.23%);
+
+  background-size: auto, cover;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .heroContent {
+    flex-direction: column !important;
+    display: flex;
+  }
+  .hero {
+    flex-direction: column !important;
+    display: flex;
+  }
+}
+.topText {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #5e5ef0;
+  margin-bottom: 10px;
+  display: block;
+}
+/* .topText{
+  
+  font-family: "Birthstone", cursive;
+  font-size: 50px;
+  color:#6669F1 ;
+  font-weight: 600;
+
+} */
+/* .trustLine {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a4a4a; 
+  display: flex;
+  gap: 15px;
+  align-items: center;
+} */
+
+.trustLine span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.trustLine span::before {
+  content: "✔";
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.heroText {
+  flex: 1;
+  padding-right: 40px;
+  position: relative;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.heroSubtitle {
+  font-size: 52px; /* Desktop ke liye */
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.heroSubtitle span {
+  color: #5e5ef0;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #00000096;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.heroButton {
+  background: #5e5ef0;
+  padding: 18px 36px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(94, 94, 240, 0.2);
+  border: none;
+  border-radius: 50px;
+}
+
+.heroButtonSecondary {
+  padding: 18px 36px;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.heroButtonSecondary:hover {
+  border-color: #5e5ef0;
+  color: #5e5ef0;
+}
+
+.trustLine {
+  display: flex;
+  gap: 40px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: none; /* BORDER HATA DEIN */
+  padding-top: 0;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .trustLine {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.heroImages {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+.heroImgRightTop {
+  margin-left: -70px;
+  padding: 20px 0px 10px 0px;
+  border-radius: 150px 150px 0px 380px;
+  animation: floatLable 5s ease-in-out infinite;
+  position: relative;
+  z-index: 10;
+}
+
+.heroImgRight {
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+
+  margin-left: -70px;
+  z-index: 10;
+}
+.heroImgLeft {
+  object-fit: cover;
+  border: 5px solid #c6c9fc;
+  border-radius: 170px;
+  box-shadow: -40px 0 20px -5px #ffffff6b;
+  z-index: 100;
+  animation: floatLable 5s ease-in-out infinite;
+}
+@keyframes floatLable {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.angleOne {
+  position: absolute;
+  top: -120px;
+  right: 0px;
+  z-index: 2;
+}
+.angleTwo {
+  position: absolute;
+  top: -80px;
+  left: 120px;
+}
+.angleThree {
+  position: absolute;
+  top: -120px;
+  left: 40px;
+}
+.angleThree img {
+  opacity: 0.4;
+}
+.angleFour {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+.angleFour img {
+  width: 180px;
+  height: auto;
+  position: relative;
+
+  filter: brightness(0.5) contrast(2) invert(0.2);
+
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+
+  opacity: 1 !important;
+  z-index: 5;
+}
+.angleFive {
+  position: absolute;
+  top: -240px;
+  left: 40px;
+  animation: floatLable 5s ease-in-out infinite;
+}
+.angleSix {
+  position: absolute;
+  top: -240px;
+  left: 0px;
+  animation: floatLable 5s ease-in-out infinite;
+}
+.angleSix img {
+  opacity: 0.4;
+}
+.mouse {
+  position: absolute;
+  bottom: -44px;
+  left: 45%;
+}
+.mouseWrap {
+  position: relative;
+}
+.scroolIn {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+.scroolIn img {
+  animation: mouseFlot 3s ease-in infinite;
+}
+@keyframes mouseFlot {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1500px) {
+  .heroSubtitle {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 20px !important;
+    padding-top: 100px !important;
+  }
+  .heroTitle {
+    font-size: 20px !important;
+  }
+  .heroSubtitle {
+    font-size: 25px !important;
+    max-width: 100%;
+  }
+  .heroText {
+    padding: 0px;
+  }
+  .angleOne,
+  .angleTwo,
+  .angleThree,
+  .angleFour,
+  .angleFive,
+  .angleSix {
+    display: none;
+  }
+  .heroImgRight {
+    max-width: 200px;
+    margin-left: -50px;
+  }
+  .heroImgLeft {
+    max-width: 170px;
+  }
+  .heroImages {
+    padding-bottom: 70px;
+    padding-top: 40px;
+  }
+  .mouse {
+    left: 33%;
+  }
+  .buttonGroup {
+    flex-direction: column;
+  }
+  .heroButton {
+    padding: 15px 20px !important;
+    display: inline;
+  }
+  .heroButtonSecondary {
+    padding: 15px 20px;
+  }
+}
+

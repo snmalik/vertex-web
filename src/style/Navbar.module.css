@@ -1,52 +1,52 @@
 /* Navbar.module.css */
 .vertexNavbar {
-    background: #BCB4FF;
-    padding: 15px 0px;
-    transition: all 0.35s ease;
-    box-shadow: 0 2px 20px rgba(112, 95, 255, 0.25);
-    backdrop-filter: blur(8px);
-    z-index: 1000;
+  background: #bcb4ff;
+  padding: 15px 0px;
+  transition: all 0.35s ease;
+  box-shadow: 0 2px 20px rgba(112, 95, 255, 0.25);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 
 .navbarScrolled {
-    padding: 5px 0;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  padding: 5px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .logo img {
-    height: 60px;
+  height: 60px;
 }
 
 .navContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navMenu {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  gap: 5px;
 }
 
 .navItem {
-    position: relative;
+  position: relative;
 }
 
 .navLink {
-    color: #fff !important;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 25px 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: 0.3s;
-    position: relative;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 25px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+  position: relative;
 }
 .navLink::after {
   content: "";
@@ -61,132 +61,146 @@
 .navLink:hover::after {
   width: 60%;
 }
-.navLink:hover { opacity: 1; }
-
+.navLink:hover {
+  opacity: 1;
+}
 
 .megaMenu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-43%);
-    width: 1400px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-    border-top: #705FFF 5px solid;
-    padding: 30px;
-    padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-43%);
+  width: 1400px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border-top: #705fff 5px solid;
+  padding: 30px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .navItem:hover .megaMenu {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .categoryTitle {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #705FFF;
-   
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #705fff;
 }
 
 .serviceItem {
-    margin-bottom: 10px;
-    list-style: none;
+  margin-bottom: 10px;
+  list-style: none;
 }
 
 .serviceItem a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: 0.2s;
-    margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: 0.2s;
+  margin-bottom: 10px;
 }
 
 .serviceItem a:hover {
-    color: #705FFF;
-    padding-left: 5px;
+  color: #705fff;
+  padding-left: 5px;
 }
 
 /* Mobile Toggle Button */
 .menuBtn {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 /* Contact Button */
 .navBtnCustom {
-    background: #fff;
-    color: #705FFF;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: 0.3s;
+  background: #fff;
+  color: #705fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 /* Responsive Logic */
 @media (max-width: 1024px) {
-    .menuBtn { display: block; }
-    
-    .navMenu {
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        background: #020106;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        transition: 0.4s;
-        overflow-y: auto;
-    }
+  .menuBtn {
+    display: block;
+  }
 
-    .navMenu.active { left: 0; }
+  .navMenu {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #020106;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: 0.4s;
+    overflow-y: auto;
+  }
 
-    .megaMenu {
-        position: static;
-        transform: none;
-        width: 100%;
-        grid-template-columns: 1fr;
-        display: none; 
-        opacity: 1;
-        visibility: visible;
-        background: rgba(255,255,255,0.1);
-        border: none;
-    }
+  .navMenu.active {
+    left: 0;
+  }
 
-    .navItem:hover .megaMenu { display: block; } 
-    
-    .navLink { padding: 15px 0; width: 100%; }
-    .categoryTitle { color: #fff; margin-top: 15px; }
-    .serviceItem a { color: #eee; }
+  .megaMenu {
+    position: static;
+    transform: none;
+    width: 100%;
+    grid-template-columns: 1fr;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+
+  .navItem:hover .megaMenu {
+    display: block;
+  }
+
+  .navLink {
+    padding: 15px 0;
+    width: 100%;
+  }
+  .categoryTitle {
+    color: #fff;
+    margin-top: 15px;
+  }
+  .serviceItem a {
+    color: #eee;
+  }
 }
 .dropdownAarrow {
   font-size: 20px;
   transition: transform 0.3s ease;
-
 }
 
 .dropdownArrow.rotate {
   transform: rotate(180deg);
 }
-.serviceColumn{
+.serviceColumn {
   padding: 0 25px;
   border-right: 1px solid #e5e5e5;
 }
+
 @media(max-width:576px){
     .navLink::after {
         display: none !important;
@@ -195,5 +209,4 @@
     .navLink:hover::after {
         width: 0% !important;
     }
-
 }

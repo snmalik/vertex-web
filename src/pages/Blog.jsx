@@ -1,16 +1,20 @@
 import React from 'react'
-
-import BlogsPages from '../components/Blog-page-main/Blogs/BlogsPages'
-import ContactSection from '../components/Contact-section/ContactSection'
+import { useSiteData } from '../context/SiteContext'
+import SectionRenderer from '../components/SectionRenderer'
 
 const Blog = () => {
-  return (
-    <div>
-  <BlogsPages />
-  <ContactSection />
-      
-    </div>
-  )
+    const { siteData } = useSiteData();
+    const sections = siteData?.blog?.sections || [];
+    const hiddenSections = siteData?.blog?.hiddenSections || [];
+
+    return (
+        <div>
+            {sections.map((id) => {
+                if (hiddenSections.includes(id)) return null;
+                return <SectionRenderer key={id} instanceId={id} />;
+            })}
+        </div>
+    )
 }
 
 export default Blog

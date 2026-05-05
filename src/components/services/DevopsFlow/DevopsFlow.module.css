@@ -1,0 +1,135 @@
+.section {
+  padding: 100px 0;
+  background-color: #2564eb19;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+   font-family: "Birthstone", cursive;
+  font-size: 40px;
+  color:#6669F1 ;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: center;
+  color: #0f172a;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  row-gap: 50px;
+}
+
+.stepCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+  position: relative;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+  
+  /* Entrance Animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardEntrance 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.15s); /* Har card thoda late ayega */
+}
+
+@keyframes cardEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stepCard:hover {
+  border-color: #2563eb;
+  box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.15);
+  transform: translateY(-5px);
+}
+
+.iconBox {
+  font-size: 32px;
+  color: #2563eb;
+  background: #eff6ff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.stepCard:hover .iconBox {
+  background: #2563eb;
+  color: #ffffff;
+  transform: rotateY(360deg); /* Full spin on hover */
+}
+
+.stepNumber {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f1f5f9; /* Subtle background number */
+}
+
+.content h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #1e293b;
+}
+
+.content p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Connector Line with Animation */
+.lineConnector {
+  position: absolute;
+  right: -25px;
+  top: 45px;
+  width: 20px;
+  height: 2px;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.glowBeam {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #2563eb, transparent);
+  animation: flowLight 2s linear infinite;
+}
+
+@keyframes flowLight {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gridContainer { grid-template-columns: repeat(2, 1fr); }
+  .lineConnector { display: none; }
+}
+
+@media (max-width: 640px) {
+  .gridContainer { grid-template-columns: 1fr; }
+}

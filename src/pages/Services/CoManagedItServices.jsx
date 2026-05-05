@@ -1,22 +1,22 @@
-import React from 'react'
-import ManagedCard from '../../components/Managed/Managedcard/ManagedCard'
-import BackupSection from '../../components/Managed/Backup-section/BackupSection'
-import AverageSection from '../../components/Managed/Average-section/AverageSection'
-import StrategyExecution from '../../components/Managed/Strategy-execution/StrategyExecution'
-import FAQ from '../../components/Managed/faq/Faq'
-import CTASection from '../../components/Managed/Cta-section/CTASection'
+import React from 'react';
+import { useSiteData } from '../../context/SiteContext';
+import SectionRenderer from '../../components/SectionRenderer';
 
-export default function ManagedServices() {
+const CoManagedIT = () => {
+  const { siteData } = useSiteData();
+  const serviceSlug = "co-managed-it-services";
+  
+  // Retrieve the page layout from the newly defined servicePages configuration
+  const pageLayout = siteData?.servicePages?.[serviceSlug] || { sections: [], hiddenSections: [] };
+  const visibleSections = pageLayout.sections.filter(s => !pageLayout.hiddenSections.includes(s));
+
   return (
     <div>
-      
-      <ManagedCard />
-      <BackupSection />
-      <AverageSection />
-      <StrategyExecution />
-      <FAQ />
-      <CTASection />
-
+      {visibleSections.map(sectionId => (
+        <SectionRenderer key={sectionId} instanceId={sectionId} />
+      ))}
     </div>
-  )
-}
+  );
+};
+
+export default CoManagedIT;
